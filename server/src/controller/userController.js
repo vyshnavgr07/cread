@@ -28,7 +28,7 @@ const login=async(req,res,next)=>{
     try {
         const data=req.body;
         if(!data){
-            return res.status(400).json({
+            return res.status(401).json({
                 message: 'user credentail not provided',
                 });
         }
