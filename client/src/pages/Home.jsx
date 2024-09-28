@@ -16,6 +16,7 @@ const Home = () => {
     useEffect(()=>{
         fetchdata()
         const intervalId = setInterval(fetchdata, 300000); 
+
 return () => {
           clearInterval(intervalId);
         };
@@ -24,7 +25,7 @@ return () => {
   return (
     <div className='w-full h-screen bg-gray-900'>
     <Navbar/>
-    <div className='flex items-center justify-center w-full h-full bg-gray-900 text-white'>
+    <div className='flex items-center justify-center w-full h-full bg-gray-600 text-white'>
   {user ? (
     <h1 className='text-4xl font-bold'>
       Welcome, {user?.username}!
