@@ -31,7 +31,7 @@ const Login = () => {
     };
 
     return (
-        <> 
+        <>          
          <Navbar/>
         <div className="relative h-screen bg-gray-50 flex justify-center items-center">
    <ToastContainer/>
