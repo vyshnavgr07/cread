@@ -14,9 +14,13 @@ const Home = () => {
         }
     }
     useEffect(()=>{
-      fetchdata()
+        fetchdata()
+        const intervalId = setInterval(fetchdata, 300000); 
+return () => {
+          clearInterval(intervalId);
+        };
     },[])
-
+     
   return (
     <div className='w-full h-screen bg-gray-900'>
     <Navbar/>
